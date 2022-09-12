@@ -18,14 +18,14 @@ export default {
       this.word = this.word.split('')
     },
     checkWord: function (guess) {
-      console.log("checking word")
-      guess = guess.split('')
-      guess.forEach(function (letter, index) => {
-        console.log(this.word)
-        console.log(letter)
-        index++
-      })
-    console.log(this.evaluation)
+    //   console.log("checking word")
+    //   guess = guess.split('')
+    //   guess.forEach(function (letter, index) => {
+    //     console.log(this.word)
+    //     console.log(letter)
+    //     index++
+    //   })
+    // console.log(this.evaluation)
   }
 },
 };
