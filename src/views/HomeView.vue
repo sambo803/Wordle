@@ -1,18 +1,30 @@
+<script>
+export default {
+  data: function () {
+    return {
+      message: "Welcome to Vue.js!",
+      words: ["other", "lunch", "horse", "maybe", "spare", "reads", "stone"],
+      word: ""
+    };
+  },
+  created: function () {
+    this.pickWord()
+  },
+  methods: {
+    pickWord: function () {
+      this.word = this.words[Math.floor(Math.random() * this.words.length)];
+    }
+  },
+};
+</script>
+
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <h1>{{ message }}</h1>
+    <p>{{word}}</p>
   </div>
 </template>
 
-<script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
+<style>
 
-export default {
-  name: 'HomeView',
-  components: {
-    HelloWorld
-  }
-}
-</script>
+</style>
